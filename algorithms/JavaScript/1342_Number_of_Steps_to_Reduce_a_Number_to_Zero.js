@@ -1,0 +1,14 @@
+const numberOfSteps = (num) => {
+  let step = 0;
+  while (num >= 0) {
+    if (num % 2 === 0 && num !== 0) {
+      num /= 2;
+      step += 1;
+    } else if (num % 2 !== 0) {
+      num -= 1;
+      step += 1;
+    } else {
+      return step;
+    }
+  }
+};
